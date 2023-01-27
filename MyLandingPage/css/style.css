@@ -1,0 +1,129 @@
+/*------------------------------------
+color, font and variable setup
+-------------------------------------*/
+
+:root{
+  --font-base:"poppins",sans-serif;    /*nithara nithara bavitha karana values walata variable hadagnnw. ethkota lesi apita aye ewa dankota variable eken kelinm assign karanna plwn(methanadi me poppin kiyana font ekata var ekk hadagen thynne)*/
+  --c-primary:#975af9;     /*c kiyanne color kiyan eka*/
+  --c-secondary:#46a7f8;
+  --c-backgeround:#e6e6e6;
+  --c-dark:#2d2d2d;
+  --c-black:#000000;
+}
+
+body{
+  font-family: var(--font-base);  /*sampuna body ekata assign karana ewa mee body eka athulata nikanm danwa div or class hadanne nathuwa*/
+  font-size: 16px;
+  line-height: 1.6;
+}
+.h1 .h2 .h3. h4 .h5 .h6{
+  font-weight: 600;
+}
+p{
+  font-family: var(--font-base);
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+  color:var(--c-primary);
+}
+
+a:hover{
+  color: var(--c-secondary);
+}
+
+.section-padding{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*------------------------------------
+Button CSS setup
+-------------------------------------*/
+.btn{
+  font-weight: 600 !important; /*mee btn kiyana class eka bootstrap eken default ena class ekak, ehema bootstrap eke class api wenas karanna yaddi samahara ewa wenas karann denne na, ethkota api code ekata kiyanna ona meka important ekak, bootatrap eke ekak kiyala. ita passe apita changers karagann plwm. !important kiyala danne ekai*/
+}
+.btn-primary{
+  background-color: var(--c-primary)!important;
+}
+.btn-light{
+  background-color: var(--c-backgeround )!important;
+}
+.btn-primary:hover {
+  background-color: var(--c-secondary)!important;
+}
+.btn-light:hover{
+  background-color:#e7f1ff !important;
+}
+
+/*------------------------------------
+navBar CSS setup
+-------------------------------------*/
+.navbar{
+  font-family: var(--font-base); /*bootstrap eken default dena class eka customize karagaththa.*/
+  font-size: 16px;
+  font-weight: 500;
+}
+.navbar-dark{
+  background-color:var(--c-black) ;
+}
+
+/*------------------------------------
+Hero CSS setup
+-------------------------------------*/
+
+#hero{
+  background: url("../img/home/Hero-img.jpg");   /*hero kiyala dagaththa id ekak api hero section ekata. ee id ekata background img eka dagnnwa methandi*/
+  background-position: top;
+  margin-top: -55px;
+}
+.herotext{
+  font-size: 85px;
+  font-weight: 700;
+}
+
+/*------------------------------------
+About Us setup
+-------------------------------------*/
+
+.brand-title{
+  font-size: 65px;
+  font-weight: 600;
+  font-family: var(--font-base);
+}
+.brand-p{
+  font-size: 25px;
+  font-weight: 400;
+  font-family: var(--font-base);
+}
+
+.brand-p-2{
+  font-size: 20px;
+  font-family: var(--font-base);
+}
+.brand-title-light{
+  font-size: 55px;
+  font-weight: 550;
+  font-family: var(--font-base);
+  color: var(--c-backgeround);
+}
+
+/*------------------------------------
+icon box setup
+-------------------------------------*/
+
+.iconbox{
+  background-color:#FFFFFF;
+  color: var(--c-primary);
+  width: 45px;
+  height: 58px;
+  align-items: center;
+  font-size: 45px;
+  flex: none;  /*..........nathnamicon eka poddak akilenawa wage ekak wenawa, dn shape ;) */
+}
